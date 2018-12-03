@@ -12,13 +12,14 @@ class TodoList extends Component {
     render() {
         return (
             <div>
-                <h1>gettin stuffs done app</h1>
+                <h1 className="title">gettin stuffs done app</h1>
                 <form onSubmit={this._onSubmit}>
                     <input
                         value={this.state.term}
                         onChange={this._onChange}
                         placeholder="enter to-do" />
                     <button type="submit">add</button>
+
                 </form>
                 <div>
                     <List items={this.state.items} />

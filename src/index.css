@@ -12,3 +12,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.title {
+  background-color: aqua;
+}
+
+.single-todo {
+  border: 1px solid blue;
+}
+
+.todo-container {
+  border: 2px solid purple;
+}

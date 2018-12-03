@@ -2,9 +2,9 @@ import React from 'react';
 
 const List = props => {
     return (
-        <ul>
+        <ul className="todo-container">
             {props.items.map((item, index) => {
-                return (<li
+                return (<li className="single-todo"
                     key={index}>
                     {item}
                 </li>);
