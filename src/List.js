@@ -4,10 +4,18 @@ const List = props => {
     return (
         <ul className="todo-container">
             {props.items.map((item, index) => {
-                return (<li className="single-todo"
-                    key={index}>
-                    {item}
-                </li>);
+                return (
+                    <li
+                        key={index}
+                        className="single-todo"
+                        onClick={() => {
+                            // console.log(`something ${index}`)
+                            props.handleClick(index);
+                        }}
+                    // onClick={props.handleClick.bind(item, index)}
+                    >
+                        {item}
+                    </li>);
             })}
         </ul>
     );
